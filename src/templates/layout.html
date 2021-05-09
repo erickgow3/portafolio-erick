@@ -1,0 +1,48 @@
+<html>
+    <!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/pinguin.svg') }}" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/5eb49420da.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+	<title>Erick David | Portafolio</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Erick David | Portafolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('about')}}">Acerca de</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+	<div class="container p-4">
+   {% block content %}
+    {% endblock %} 
+  </div>
+  
+  <footer>
+    <section class="redes">
+        <div class="contenedor">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ERICKGOW3"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/erickgow3"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/erick-vazquez29/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </section>
+</footer>
+    </body>
+</html>

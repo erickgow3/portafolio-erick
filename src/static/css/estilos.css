@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header .cuadro-texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 90px 0;
+}
+
+header .cuadro-texto .texto{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+header .cuadro-texto .texto h1, header .cuadro-texto .texto h2{
+    color: black;
+    font-weight: 300;
+}
+
+header .cuadro-texto .texto .nombre{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+header .cuadro-texto .texto .especialidad{
+    font-size: 25px;
+    line-height: 25px;
+}
+main{
+    text-align: center;
+}
+
+main .contenedor{
+    overflow: visible;
+}
+
+main .about .foto{
+    margin-top: -90px;
+}
+
+main .about .foto img{
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0 ,0 ,0.2);
+}
+
+main .about .texto{
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 50px auto;
+}
+
+main .about .texto .titulo{
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: slategrey;
+}
+
+footer .redes{
+    background: #1f3f57;
+    padding: 20px 0 
+}
+
+footer .redes .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px
+}
+
+@media screen and (max-width: 800px){
+    header nav{
+        text-align: center;
+    }
+
+    main .trabajos .contenedort .trabajo{
+        width: 46%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    header .cuadro-texto .texto .nombre{
+        font-size: 35px;
+
+    }
+
+    header .cuadro-texto .texto .especialidad{
+        font-size: 18px;
+    }
+    footer .redes .contenedor{
+        flex-wrap: wrap;
+    }
+
+    main .trabajos .contenedort .trabajo{
+        width: 100%;
+    }
+}
